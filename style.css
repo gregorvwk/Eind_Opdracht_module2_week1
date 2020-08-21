@@ -97,7 +97,7 @@ main img {
 }
 
 .card-1:hover p {
-  color: white;
+  display: none;
 }
 
 .card-1:hover a {
@@ -131,7 +131,7 @@ main img {
 }
 
 .card-2:hover p {
-  color: white;
+  display: none;
 }
 
 .card-2:hover a {
@@ -165,7 +165,7 @@ main img {
 }
 
 .card-3:hover p {
-  color: white;
+  display: none;
 }
 
 .card-3:hover a {
@@ -199,7 +199,7 @@ main img {
 }
 
 .card-4:hover p {
-  color: white;
+  display: none;
 }
 
 .card-4:hover a {
@@ -233,7 +233,7 @@ main img {
 }
 
 .card-5:hover p {
-  color: white;
+  display: none;
 }
 
 .card-5:hover a {
@@ -267,7 +267,7 @@ main img {
 }
 
 .card-6:hover p {
-  color: white;
+  display: none;
 }
 
 .card-6:hover a {
@@ -302,7 +302,7 @@ main img {
 }
 
 .card-7:hover p {
-  color: white;
+  display: none;
 }
 
 .card-7:hover a {

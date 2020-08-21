@@ -89,7 +89,7 @@ main img {
     &:hover {
         transform: scale(0.9);
         & p {
-            color: white;
+            display: none;
         }
         & a {
             color: black;
@@ -106,7 +106,7 @@ main img {
     &:hover {
         transform: scale(1.1);
         & p {
-            color: white;
+            display: none;
         }
         & a {
             color: black;
@@ -123,7 +123,7 @@ main img {
     &:hover {
         transform: rotate(180deg);
         & p {
-            color: white;
+            display: none;
         }
         & a {
             color: black;
@@ -140,7 +140,7 @@ main img {
     &:hover {
         transform: rotatey(90deg);
         & p {
-            color: white;
+            display: none;
         }
         & a {
             color: black;
@@ -157,7 +157,7 @@ main img {
     &:hover {
         transform: perspective(400px) rotatey(45deg);
         & p {
-            color: white;
+            display: none;
         }
         & a {
             color: black;
@@ -174,7 +174,7 @@ main img {
     &:hover {
         transform: translateX(200px);
         & p {
-            color: white;
+            display: none;
         }
         & a {
             color: black;
@@ -193,7 +193,7 @@ main img {
         -ms-transform:matrix(0.21,-0.34,0.45,1.20,19,0);
         -webkit-transform:matrix(0.21,-0.34,0.45,1.20,19,0);
         & p {
-            color: white;
+            display: none;
         }
         & a {
             color: black;
