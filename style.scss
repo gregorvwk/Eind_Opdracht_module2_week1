@@ -1,0 +1,265 @@
+
+// Main styling
+@mixin shadow {
+    box-shadow: 5px 5px 10px 5px gray;
+}
+@mixin cardStyle {
+    @include shadow;
+    border-radius: 20px;
+    width: 300px;
+    margin: 10px;
+    align-self: center;
+    justify-self: center;
+}
+body {
+    background: #c3cfe2;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+header {
+    @include shadow;
+    background: white;
+    border-radius: 20px;
+    margin: 0 50px;
+    & h2 {
+        color: gray;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+
+// Card styling
+
+main a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    background: white;
+}
+.card__top {
+    background: white;
+    padding: 20px;
+    padding-bottom: 50px;
+    border-radius: 20px 20px 0px 0px;
+    height: 200px;
+    & p{
+        font-size: 20px;
+        color: gray;
+    }
+}
+.card__bottom {
+    background: #686de0;
+    padding: 20px;
+    margin-top: -65px;
+    border-radius: 0px 0px 20px 20px;
+    color: white;
+}
+h3 {
+    margin-top: 50px;
+    font-size: 24px;
+    margin-bottom: -10px;
+}
+
+// images styling
+
+main img {
+    height: 100px;
+    border-radius: 100px;
+    width: 100px;
+    border: white 5px solid;
+    margin: 0 100px;
+    margin-top: -50px;
+}
+
+// transform 
+
+.card-1 {
+    @include cardStyle;
+    transition: all 250ms ease-in;
+    &:hover {
+        transform: scale(0.9);
+        & p {
+            color: white;
+        }
+        & a {
+            color: black;
+            background: gray;
+        }
+        & img {
+            transform: scale(0.8);
+        }
+    }
+}
+.card-2 {
+    @include cardStyle;
+    transition: all 250ms ease-in;
+    &:hover {
+        transform: scale(1.1);
+        & p {
+            color: white;
+        }
+        & a {
+            color: black;
+            background: gray;
+        }
+        & img {
+            transform: scale(0.8);
+        }
+    }
+}
+.card-3 {
+    @include cardStyle;
+    transition: all 250ms ease-in;
+    &:hover {
+        transform: rotate(180deg);
+        & p {
+            color: white;
+        }
+        & a {
+            color: black;
+            background: gray;
+        }
+        & img {
+            transform: scale(0.8);
+        }
+    }
+}
+.card-4 {
+    @include cardStyle;
+    transition: all 250ms ease-in;
+    &:hover {
+        transform: rotatey(90deg);
+        & p {
+            color: white;
+        }
+        & a {
+            color: black;
+            background: gray;
+        }
+        & img {
+            transform: scale(0.8);
+        }
+    }
+}
+.card-5 {
+    @include cardStyle;
+    transition: all 250ms ease-in;
+    &:hover {
+        transform: perspective(400px) rotatey(45deg);
+        & p {
+            color: white;
+        }
+        & a {
+            color: black;
+            background: gray;
+        }
+        & img {
+            transform: scale(0.8);
+        }
+    }
+}
+.card-6 {
+    @include cardStyle;
+    transition: all 250ms ease-in;
+    &:hover {
+        transform: translateX(200px);
+        & p {
+            color: white;
+        }
+        & a {
+            color: black;
+            background: gray;
+        }
+        & img {
+            transform: scale(0.8);
+        }
+    }
+}
+.card-7 {
+    @include cardStyle;
+    transition: all 250ms ease-in;
+    &:hover {
+        transform:matrix(0.21,-0.34,0.45,1.20,19,0);
+        -ms-transform:matrix(0.21,-0.34,0.45,1.20,19,0);
+        -webkit-transform:matrix(0.21,-0.34,0.45,1.20,19,0);
+        & p {
+            color: white;
+        }
+        & a {
+            color: black;
+            background: gray;
+        }
+        & img {
+            transform: scale(0.8);
+        }
+    }
+}
+
+// Social media buttons
+
+.social-media {
+    & img {
+        width: 30px;
+    }
+}
+
+.social-media.insta {
+    background-color: #e17b77;
+    padding: 20px;
+    margin: 0;
+}
+
+.social-media.facebook {
+    background-color: #3b5998;
+    padding: 20px;
+    margin: 0;
+}
+
+.social-media.twitter {
+    background-color: #00aced;
+    padding: 20px;
+    margin: 0;
+}
+
+.social-media.github {
+    background-color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+.social-media.linkedin {
+    background-color: #007bb6;
+    padding: 20px;
+    margin: 0;
+}
+
+
+// media querry
+
+@media (min-width: 650px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    header {
+        margin: 0 100px;
+    }
+}
+@media (min-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    header {
+        margin: 0 200px;
+    }
+}
