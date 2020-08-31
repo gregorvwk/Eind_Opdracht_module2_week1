@@ -18,8 +18,7 @@ body {
 }
 main {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    overflow: hidden;
 }
 header {
     @include shadow;
@@ -32,13 +31,6 @@ header {
         padding-bottom: 10px;
     }
 }
-
-footer {
-    padding-top: 50px;
-    margin: 0;
-}
-// Card styling
-
 main a {
     color: white;
     text-decoration: none;
@@ -83,7 +75,7 @@ main img {
 
 // transform 
 
-.card-1 {
+.card1 {
     @include cardStyle;
     transition: all 250ms ease-in;
     &:hover {
@@ -100,11 +92,11 @@ main img {
         }
     }
 }
-.card-2 {
+.card2 {
     @include cardStyle;
     transition: all 250ms ease-in;
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.2);
         & p {
             display: none;
         }
@@ -117,7 +109,7 @@ main img {
         }
     }
 }
-.card-3 {
+.card3 {
     @include cardStyle;
     transition: all 250ms ease-in;
     &:hover {
@@ -134,7 +126,7 @@ main img {
         }
     }
 }
-.card-4 {
+.card4 {
     @include cardStyle;
     transition: all 250ms ease-in;
     &:hover {
@@ -151,7 +143,7 @@ main img {
         }
     }
 }
-.card-5 {
+.card5 {
     @include cardStyle;
     transition: all 250ms ease-in;
     &:hover {
@@ -168,7 +160,7 @@ main img {
         }
     }
 }
-.card-6 {
+.card6 {
     @include cardStyle;
     transition: all 250ms ease-in;
     &:hover {
@@ -185,7 +177,7 @@ main img {
         }
     }
 }
-.card-7 {
+.card7 {
     @include cardStyle;
     transition: all 250ms ease-in;
     &:hover {
@@ -207,87 +199,68 @@ main img {
 
 // Social media buttons
 
-.social-media {
-    margin: 0;
-        & img {
+.socialmedia {
+    margin: 0 auto;
+    & img{
         width: 30px;
+        height: 30px;
     }
 }
-.insta {
-    background: #eb9693;
-    padding: 20px 0;
-    margin-right: -4px;
-}
-.insta img {
-    background-color: #eb9693;
-    padding: 20px;
-    margin: 0;
-    transition: all 400ms ease-out;
-    margin-bottom: -25px;
+.socialmedia__insta img{
+    background: pink;
+    padding: 10px;
+    margin:10px;
+    box-shadow: 5px 5px 10px 5px gray;
+    transition: all 500ms ease-in-out;
+    border-radius: 20px;
     &:hover{
-        transform: translateY(-40px);
+        transform: scale(1.3);
     }
 }
-.facebook {
-    background: #3b5998;
-    padding: 20px 0;
-    margin-right: -4px;
-}
-.facebook img {
-    background-color: #3b5998;
-    padding: 20px;
-    margin: 0;
-    transition: all 400ms ease-out;
-    margin-bottom: -25px;
-    &:hover {
-        transform: translateY(-40px);
+.socialmedia__facebook img{
+    background: rgba(0, 0, 151, 0.774);
+    padding: 10px;
+    margin:10px;
+    box-shadow: 5px 5px 10px 5px gray;
+    transition: all 500ms ease-in-out;
+    border-radius: 20px;
+    &:hover{
+        transform: scale(1.3);
     }
 }
-.twitter {
-    background: #46ceff;
-    padding: 20px 0;
-    margin-right: -4px;
-}
-.twitter img {
-    background-color: #46ceff;
-    padding: 20px;
-    margin: 0;
-    transition: all 400ms ease-out;
-    margin-bottom: -25px;
-    &:hover {
-        transform: translateY(-40px);
+.socialmedia__twitter img{
+    background: white;
+    padding: 10px;
+    margin:10px;
+    box-shadow: 5px 5px 10px 5px gray;
+    transition: all 500ms ease-in-out;
+    border-radius: 20px;
+    &:hover{
+        transform: scale(1.3);
     }
 }
-.github {
-    background: #333;
-    padding: 20px 0;
-    margin-right: -4px;
-}
-.github img {
-    background-color: #333;
-    padding: 20px;
-    margin: 0;
-    transition: all 400ms ease-out;
-    margin-bottom: -25px;
-    &:hover {
-        transform: translateY(-40px);
+.socialmedia__github img{
+    background: gray;
+    padding: 10px;
+    margin:10px;
+    box-shadow: 5px 5px 10px 5px gray;
+    transition: all 500ms ease-in-out;
+    border-radius: 20px;
+    &:hover{
+        transform: scale(1.3);
     }
 }
-.linkedin {
-    background: #4196bd;
-    padding: 20px 0;
-}
-.linkedin img {
-    background-color: #4196bd;
-    padding: 20px;
-    margin: 0;
-    transition: all 400ms ease-out;
-    margin-bottom: -25px;
-    &:hover {
-        transform: translateY(-40px);
+.socialmedia__linkedin img{
+    background: lightblue;
+    padding: 10px;
+    margin:10px;
+    box-shadow: 5px 5px 10px 5px gray;
+    transition: all 500ms ease-in-out;
+    border-radius: 20px;
+    &:hover{
+        transform: scale(1.3);
     }
 }
-
 // media querry
 
 @media (min-width: 650px) {
